@@ -21,8 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="6"
-            android:scaleType="centerCrop"
-            android:src="@drawable/red_card_hand" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/troll_face"
+            android:adjustViewBounds="true" />
 
         <TextView style="@style/MemeTextView"
             android:paddingTop="@dimen/text_view_padding"
