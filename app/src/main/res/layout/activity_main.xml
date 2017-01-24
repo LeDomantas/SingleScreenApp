@@ -15,6 +15,7 @@
 
         <TextView
             android:gravity="center"
+            android:textAlignment=""
             android:textSize="24sp"
             android:layout_height="0dp"
             android:layout_width="match_parent"
@@ -26,7 +27,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scrollbars = "vertical"
-            android:text="WHEN YOUR OPPONENT NUDGES YOU" />
+            android:text="@string/top_text" />
 
         <ImageView
             android:src="@drawable/red_card_hand"
@@ -48,6 +49,6 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scrollbars = "vertical"
-            android:text="BUT YOU'VE GOT AMAZING ACTING SKILLS" />
+            android:text="@string/bottom_text" />
     </LinearLayout>
 </ScrollView>
