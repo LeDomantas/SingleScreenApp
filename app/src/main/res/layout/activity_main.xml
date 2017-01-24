@@ -1,54 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
-    android:fillViewport="true"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.trollfaceredcardmeme.MainActivity"
-    android:background="#FF0000">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    android:fillViewport="true"
+    tools:context="com.example.android.trollfaceredcardmeme.MainActivity">
+
     <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:gravity="center"
-            android:textAlignment=""
-            android:textSize="24sp"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif"
-            android:textColor="@android:color/white"
-            android:paddingTop="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:scrollbars = "vertical"
+        <TextView style="@style/MemeTextView"
+            android:paddingTop="@dimen/text_view_padding"
             android:text="@string/top_text" />
 
         <ImageView
-            android:src="@drawable/red_card_hand"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
             android:scaleType="centerCrop"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="6" />
+            android:src="@drawable/red_card_hand" />
 
-        <TextView
-            android:gravity="center"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
-            android:paddingBottom="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:scrollbars = "vertical"
+        <TextView style="@style/MemeTextView"
+            android:paddingTop="@dimen/text_view_padding"
             android:text="@string/bottom_text" />
     </LinearLayout>
 </ScrollView>
